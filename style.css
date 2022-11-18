@@ -1,0 +1,444 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0px;
+    
+}
+/*Logo of the webpage*/
+#logo{
+    height:60px ;
+    width:55.85px ;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* Navigation Bar  */
+.navi {
+    color: #fff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 35px;
+    box-sizing: border-box;
+     background: rgba(3, 3, 3, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;}
+
+.nav-right a {
+    margin-right: 5px;
+    padding: 10px;
+    text-decoration: tranparent;
+    color: rgb(156, 154, 154);
+    transition: text-decoration 1s ease-in-out, letter-spacing 0.50s ease-in-out;
+}
+/*hover effect of navigation bar*/
+.nav-right a:hover {
+    color: rgb(253, 252, 252);
+    font-weight: 600;
+    text-shadow: 1px 1px 20px wheat;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    letter-spacing: 1px;
+}
+
+#locate{
+  align-items: baseline;
+   display: flex;
+}
+
+#texts{
+    color: #fff;
+    padding: 200px;
+    display: flex;
+}
+
+
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+/*background image*/
+.top_up{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#buy{
+    padding: 2px 35px;
+    background-color:rgb(184, 179, 179);
+   justify-content: center;
+    height: 75px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    text-decoration: none;
+}
+/* about fest section */
+
+#aboutfest{
+    padding-left: 10px;
+    margin: 5px;
+}
+
+#para_image{
+    display: flex;
+}
+
+#para{
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   text-align: center;
+   display: flex;
+   max-width: 500px;
+}
+/*images*/
+
+#images ul{
+      display: grid;
+      grid-template-columns: 4fr 2fr 2fr 3fr 6fr;
+      max-width: 600px;
+      padding: 10px;
+}
+
+#images :nth-child(1){
+    grid-row: 1/ span 2;
+    grid-column: 1/span 2;
+    z-index: 2;
+}
+
+#images :nth-child(2){
+    grid-row: 2/ span 4;
+    grid-column: 2/span 3;
+    z-index: 2;
+    }
+
+#images :nth-child(3){
+    grid-row: 4/ span 3;
+    grid-column: 4/span 2;
+    
+    }
+
+#grid{
+    list-style: none;
+    margin: 0, 0, 0, 2rem;
+}
+/* book your seat section */
+#booking{
+    padding: 200px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/img9.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#cypackage{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+#book1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#info{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 1em;
+    
+}
+#info input{
+    border-radius: 5px;
+    height:40px ;
+}
+
+#choose{
+    position:relative ;
+    padding: 5px;
+    background-color: #fff;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+#dropdown{
+    position: absolute;
+    left: -99999px;
+    
+    width: 200px;
+    text-decoration: none;
+}
+/*
+#package li:hover #dropdown 
+{
+    left:0px;
+}
+*/
+#dropdown a{
+    border-radius: 5px;
+    background: white;
+    border-bottom: 1px solid black;
+}
+#dropdown a:hover{
+    background-color: antiquewhite;
+}
+
+/*booking*/
+#booking_input{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+#counter{
+    display: flex;
+    width: 50%;
+    align-items:flex-end;
+    justify-items: flex-end;
+    padding-left: 20px;
+    
+}
+#counter p{
+    align-items:flex-end;
+    justify-items: flex-end;
+
+}
+.count{
+    padding: 8px;
+    background-color: #fff;
+    margin: 5px;
+}
+#cost{
+    width: 100%;
+}
+#money{
+    padding: 8px 15px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+#pay{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#paynow{
+    background-color:orange;
+    padding: 10px 18px 10px 18px ;
+    width: 20%;
+    border: 0;
+    border-radius: 5px;
+}
+#paynow:hover{
+    background-color: chocolate;
+    transition: 0.9;
+}
+
+/*footer elements*/
+#footer{
+    display: flex;
+    width: 50%;
+}
+#contact_us{
+    width:100% ;
+}
+#cont{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#last_logo img{
+    height:55px ;
+    width:55.85px ;
+    margin-top: 20px;
+    padding: 2px; 
+    margin: 10px; 
+}
+#all_foot{
+    display: flex;
+}
+#p{
+    padding: 5px;
+   
+}
+#design{
+    align-items: flex-end;
+    justify-content: end;
+    color: orange;
+}
+
+/*footer animation*/
+#animation{
+    background: #080a3c;
+    height: 200px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+#animation::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/footer-shape1.png);
+     animation: imgChange 1s linear 1s infinite;
+}
+#animation::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/footer-shape2.png);
+    animation: imgChangeTwo 1s linear 1s infinite;
+}
+
+@keyframes imgChange{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes imgChangeTwo{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* after various changes */
+/* contains multiple CSS part of HTML */
+#list{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.options{
+    width: 100%;
+    padding:15px 0px 15px 70px ;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0px;
+}
+#selectText{
+    width: 100%;
+    padding: 0px;
+    background-color: #fff;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    align-items: center;
+    justify-content: center; 
+    box-sizing: border-box;
+}
+.options:hover{
+background-color: grey;
+}
+.hide{
+    visibility: hidden;
+}
+
+
+
+select{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #5c6664;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#fff;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: .25em;
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #23b499;
+ }
+ #numberPlace{
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+    color: black;
+
+ }
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Festival</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/6052586373.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class="top_up">
+
+        <!-- navigation bar -->
+
+    <nav class="navi">
+        <div class="nav-left">
+            <img id="logo" src="images/snow_icon.png" alt="logo">
+            <div>
+                <h1>Snow Festival</h1>
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul>
+            <li><a href="#banner-id">Home</a></li>
+            <li><a href="#">About Fest</a></li>
+            </ul> 
+
+        </div>
+        <div id="buy">
+            <a href="#booking" style="color: black; text-decoration:none">Buy Tickets</a>
+        </div>
+    </nav>
+
+    <!-- texts and countdown part -->
+
+    <div id="locate">
+        <div id="texts">
+            <div id="text_flex">
+            <div>
+         <h1 >Snow Fest</h1>
+            </div>
+          <div>
+         <p><i class="fa-solid fa-location-dot"></i> Himachal Pradesh, India</p>
+         </div>
+         <div>
+         <p>The annual winter fair, where you can<br>have lots of fun</p>
+         </div> 
+
+         <!-- countdown -->
+
+        <div class="container">
+        <h1>
+            We start in
+        </h1>
+        <div id="line"></div>
+        <p id="timer"></p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- about fest section -->
+
+<section>
+    <div>
+        <h1 id="aboutfest">About Fest</h1>
+        <hr>
+    </div>
+</section>
+<section id="para_image">
+    <div id="para">
+        A winter festival, winter carnival, snow festival, or frost fair is an outdoor cold weather celebration that occurs in wintertime.
+    </div>
+
+    <!-- grid images part -->
+
+    <div id="images">
+      <ul id="grid">
+        <li>
+        <img src="images/img7.jpg" height="150px" width="250px">
+        </li>
+        <li>
+        <img src="images/img6.jpg" height="150px" width="250px">
+        </li>
+        <li>
+        <img src="images/img5.jpg" height="150px" width="250px">
+        </li>
+       </ul>
+    </div>
+</section>
+
+<!-- book your seat section -->
+
+<section id="booking">
+    <div id="book1">
+    <h1>Book Your Seat</h1>
+    </div>
+    
+    <!-- contact info -->
+    
+     <div class="contact">
+      <div id="info">
+        <input type="text" placeholder="  Your Name">
+        <input type="text" placeholder="  Email" >
+        <input type="date" placeholder="Choose your date">
+      </div>
+      
+      <!-- package selection part -->
+
+      <div id="cypackage">
+          <h1 style="text-align: center;">Choose your package</h1>
+<div class="select">
+   <select name="format" id="format">
+      <option selected disabled>Choose a book format</option>
+      <option id="general" value="General package">General package</option>
+      <option id="gold" value="Gold Package">Gold Package</option>
+      <option id="diamond" value="Diamond Package">Diamond Package</option>
+   </select>
+         </div>
+
+         <!-- plus-minus button section -->
+
+         <div id="booking_input">
+           <div id="cost">
+            <p>Total cost</p>
+            <p id="money"> $700</p>
+           </div>
+           <div id="counter">
+            <p class="nav-item" style="padding-top: 45px; color: white; font-size: 40px; display: flex;">
+                <button id="minus" style="padding: 5px;">-</button>
+                <span id="numberPlace">0</span>
+                <button id="plus">+</button>
+
+          </div>
+        </div>
+     </div>
+    <div id="pay"><button id="paynow" type="submit">Pay Now</button></div>
+</section>
+
+<!-- animation section -->
+
+<section id="animation">
+    <div id="contact_us">
+        <div id="cont">
+        <h1>Contact Us</h1>
+        </div>
+        <div id="all_foot">
+         <div id="footer">
+            <div id="last_logo">
+                <img src="images/snow_icon.png">
+            </div>
+            <div id="p">
+                <p>Himachal, India<br>+983453644<br>snowfair@hp.com</p>
+            </div>
+         </div>
+         <div id="design">
+         <p>@ designed by Israf Hossain</p>
+         </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- javascript part -->
+
+<script type="text/javascript">
+  window.onload=function(){
+    var minusBtn = document.getElementById("minus"),
+        plusBtn = document.getElementById("plus"),
+        numberPlace = document.getElementById("numberPlace"),
+        submitBtn = document.getElementById("submit"),
+        number = 0, /// number value
+        min = 0, /// min number
+        max = 30; /// max number
+        
+    minusBtn.onclick = function(){
+        if (number>min){
+           number = number-1; 
+           numberPlace.innerText = number ; 
+           
+        }
+        if(number == min) {        
+            numberPlace.style.color= "red";
+            setTimeout(function(){numberPlace.style.color= "black"},500)
+        }
+        else {
+          numberPlace.style.color="black";            
+           }
+                
+    }
+    plusBtn.onclick = function(){
+        if(number<max){
+           number = number+1;
+           numberPlace.innerText = number ; 
+        }     
+        if(number == max){
+               numberPlace.style.color= "red";
+               setTimeout(function(){numberPlace.style.color= "black"},500)
+        }
+           
+        else {
+               numberPlace.style.color= "black";
+               
+        }
+     
+           
+    }
+    submitBtn.onclick = function(){
+        alert("you choice : " + number);
+    }
+    
+}
+</script>
+</body>
+</html>
